@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5568;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Wave Icon -->
+  <g transform="translate(10, 15)">
+    <!-- Main wave -->
+    <path d="M0 15 Q5 5, 10 15 T20 15 T30 15" 
+          stroke="url(#waveGradient)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-linecap="round"/>
+    
+    <!-- Second wave -->
+    <path d="M0 20 Q5 10, 10 20 T20 20 T30 20" 
+          stroke="url(#waveGradient)" 
+          stroke-width="2.5" 
+          fill="none" 
+          stroke-linecap="round" 
+          opacity="0.8"/>
+    
+    <!-- Third wave -->
+    <path d="M0 25 Q5 15, 10 25 T20 25 T30 25" 
+          stroke="url(#waveGradient)" 
+          stroke-width="2" 
+          fill="none" 
+          stroke-linecap="round" 
+          opacity="0.6"/>
+    
+    <!-- Live indicator dot -->
+    <circle cx="35" cy="10" r="3" fill="#ff4757">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Text -->
+  <text x="55" y="25" 
+        font-family="'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" 
+        font-size="18" 
+        font-weight="700" 
+        fill="url(#textGradient)">Wave</text>
+  
+  <text x="55" y="42" 
+        font-family="'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" 
+        font-size="14" 
+        font-weight="500" 
+        fill="#8b5cf6">Live</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="160" cy="20" r="2" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="170" cy="30" r="1.5" fill="#667eea" opacity="0.6"/>
+  <circle cx="180" cy="25" r="1" fill="#f093fb" opacity="0.5"/>
+</svg>
