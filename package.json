@@ -1,0 +1,35 @@
+{
+  "name": "wavelive-agents",
+  "version": "1.0.0",
+  "description": "WaveLive Agents Website - Agent registration and management platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "convert": "./convert-files.sh",
+    "build": "echo 'Building project...' && ./convert-files.sh",
+    "preview": "open http://localhost:8000 && python3 -m http.server 8000"
+  },
+  "keywords": [
+    "wavelive",
+    "agents",
+    "live-streaming",
+    "commission",
+    "arabic",
+    "rtl"
+  ],
+  "author": "WaveLive Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wavelive/agents-website"
+  },
+  "homepage": "https://wave-live.com",
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.6.0"
+  }
+}
